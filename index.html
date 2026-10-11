@@ -11,6 +11,29 @@
   <meta property='og:url' content='https://daishi11.github.io/'>
   <title>Daishi11 — Games, tools &amp; experiments</title>
   <link rel='stylesheet' href='styles.css'>
+  <style>
+    .itch-preview {
+      grid-column: 1 / -1;
+      padding-top: 23px;
+      border-top: 1px solid var(--line-soft);
+    }
+    .itch-preview-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-bottom: 15px;
+    }
+    .itch-preview-header p { color: var(--muted); font-size: 12px; }
+    .itch-frame { display: block; width: 552px; height: 167px; max-width: 100%; border: 0; }
+    .itch-mobile-link { display: none; }
+    @media (max-width: 620px) {
+      .itch-frame { display: none; }
+      .itch-mobile-link { display: block; color: var(--secondary); font-size: 13px; }
+      .itch-mobile-link a { color: var(--accent); }
+    }
+  </style>
 </head>
 <body>
   <a class='skip-link' href='#main'>Skip to content</a>
@@ -101,24 +124,40 @@
         <div class='project-main'>
           <div class='project-topline'>
             <span class='project-index'>02 / GAME DEMO</span>
-            <span class='status status-available'>AVAILABLE ON STEAM</span>
+            <span class='status status-available'>STEAM DEMO + BROWSER PREVIEW</span>
           </div>
           <h3 id='demo-title'>Cyan Moon <span class='accent'>Demo</span></h3>
           <div class='project-description'>
             <p class='hook'>Get a feel for Cyan Moon and its visual sandbox before the full game arrives.</p>
             <p>The free demo lets you experiment with simulation rules, colors, and patterns at your own pace. It is a hands-on introduction to the experience, not a separate game with missions or objectives.</p>
             <p>The demo is slightly behind the upcoming main version in content and features. New systems, improvements, and polish may reach the full game first.</p>
-            <p>You can play the demo through Steam now. An itch.io version is also being prepared; its link will appear here when it is ready.</p>
+            <p>Download the demo on Steam, or try a smaller interactive browser preview on itch.io without installing anything. The browser preview is not the full Steam demo.</p>
           </div>
           <div class='project-links'>
             <a class='button button-primary' href='https://store.steampowered.com/app/5176400/Cyan_Moon__The_Simulation_Program/?utm_source=daishi11portfolio' target='_blank' rel='noopener noreferrer'>Get the Steam demo <span aria-hidden='true'>↗</span></a>
-            <span class='coming-link' aria-label='itch.io demo not yet published'>itch.io — coming soon</span>
+            <a class='button button-secondary' href='https://daishi11.itch.io/cyan-moon-interactive-browser-preview' target='_blank' rel='noopener noreferrer'>Play browser preview <span aria-hidden='true'>↗</span></a>
           </div>
         </div>
         <figure class='demo-figure'>
           <img src='assets/cyan-moon-demo.png' alt='Actual Cyan Moon simulation with layers of blue and purple rectangular patterns around a bright cyan center' width='885' height='886' loading='lazy'>
           <figcaption>Actual Cyan Moon simulation</figcaption>
         </figure>
+        <div class='itch-preview'>
+          <div class='itch-preview-header'>
+            <span class='mini-label'>INTERACTIVE BROWSER PREVIEW ON ITCH.IO</span>
+            <p>Try it directly in your browser</p>
+          </div>
+          <iframe
+            class='itch-frame'
+            title='Cyan Moon interactive browser preview on itch.io'
+            src='https://itch.io/embed/5138415?fg_color=00e6f2&amp;link_color=105c5e'
+            width='552'
+            height='167'
+            loading='lazy'
+            referrerpolicy='strict-origin-when-cross-origin'
+          ><a href='https://daishi11.itch.io/cyan-moon-interactive-browser-preview'>Cyan Moon - Interactive Browser Preview by Daishi11</a></iframe>
+          <p class='itch-mobile-link'>Open the <a href='https://daishi11.itch.io/cyan-moon-interactive-browser-preview' target='_blank' rel='noopener noreferrer'>interactive browser preview on itch.io</a>.</p>
+        </div>
       </article>
 
       <article class='project-card project-split eq-card' id='youtube-punch-eq' aria-labelledby='eq-title'>
