@@ -1,28 +1,201 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang='en'>
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Daishi11 | Projects</title>
-  <style>
-    body {
-      background: #10141c;
-      color: #e5e7eb;
-      font-family: system-ui, sans-serif;
-      max-width: 800px;
-      margin: 100px auto;
-      padding: 24px;
-    }
-    a { color: #5eead4; }
-  </style>
+  <meta name='theme-color' content='#0a1017'>
+  <meta name='description' content='Games, tools, and experiments by Daishi11. Discover Cyan Moon, YouTube Punch EQ, ShortcutManager, and more.'>
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Daishi11 — Games, tools & experiments'>
+  <meta property='og:description' content='Independent software projects, from experimental simulations to everyday utilities.'>
+  <meta property='og:url' content='https://daishi11.github.io/'>
+  <title>Daishi11 — Games, tools &amp; experiments</title>
+  <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-  <h1>Daishi11</h1>
-  <p>Games, tools & experiments.</p>
-  <h2>Projects</h2>
-  <p><a href='https://store.steampowered.com/app/5176400/'>Cyan Moon</a></p>
-  <p><a href='https://github.com/Daishi11/youtube-punch-eq'>YouTube Punch EQ</a></p>
-  <p><a href='https://ko-fi.com/daishi11'>Support me on Ko-fi</a></p>
-  <p>Full portfolio coming soon.</p>
+  <a class='skip-link' href='#main'>Skip to content</a>
+
+  <header class='site-header'>
+    <div class='header-inner shell'>
+      <a class='wordmark' href='#top' aria-label='Daishi11 — back to top'>
+        <span class='wordmark-name'>DAISHI11</span>
+      </a>
+      <nav aria-label='Main navigation'>
+        <a href='#projects'>Projects</a>
+        <a href='#about'>About</a>
+        <a class='nav-support' href='https://ko-fi.com/daishi11' target='_blank' rel='noopener noreferrer'>Support on Ko-fi <span aria-hidden='true'>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id='main'>
+    <section class='hero shell' id='top' aria-labelledby='hero-title'>
+      <div class='hero-copy'>
+        <p class='eyebrow'><span class='eyebrow-line' aria-hidden='true'></span> INDEPENDENT DEVELOPMENT</p>
+        <h1 id='hero-title'>Games, tools <span class='amp'>&amp;</span><br><span class='accent'>experiments.</span></h1>
+        <p class='hero-lead'>I'm Daishi11. I make experimental software, small utilities, and the occasional game—usually because I want something to exist and can't find quite the right version of it.</p>
+        <div class='hero-actions'>
+          <a class='button button-primary' href='#projects'>Explore projects <span aria-hidden='true'>↓</span></a>
+          <a class='text-link' href='https://github.com/Daishi11' target='_blank' rel='noopener noreferrer'>GitHub profile <span aria-hidden='true'>↗</span></a>
+        </div>
+      </div>
+      <aside class='hero-note' aria-label='Site introduction'>
+        <span class='terminal-heading'><span class='terminal-square' aria-hidden='true'></span> BUILDING THINGS, ONE AT A TIME</span>
+        <div class='hero-note-rule' aria-hidden='true'></div>
+        <p>Some are ready to try.<br>Some are still in progress.<br>All of them are made out of curiosity.</p>
+        <span class='mono muted'>// welcome to my projects</span>
+      </aside>
+    </section>
+
+    <section class='project-section shell' id='projects' aria-labelledby='projects-title'>
+      <div class='section-heading'>
+        <div>
+          <p class='eyebrow'>THE COLLECTION</p>
+          <h2 id='projects-title'>Selected projects<span class='accent'>.</span></h2>
+        </div>
+        <span class='section-count'>01 — 04</span>
+      </div>
+
+      <article class='project-card project-featured' id='cyan-moon' aria-labelledby='cyan-title'>
+        <div class='project-topline'>
+          <span class='project-index'>01 / GAME &amp; SIMULATION</span>
+          <span class='status status-upcoming'>COMING TO EARLY ACCESS</span>
+        </div>
+        <div class='featured-copy'>
+          <div class='project-heading'>
+            <h3 id='cyan-title'>Cyan Moon</h3>
+            <p class='project-subtitle'>The Simulation Program</p>
+          </div>
+          <div class='project-description'>
+            <p class='hook'>A sandbox where simple rules turn into unexpectedly beautiful results.</p>
+            <p>Cyan Moon is a visual simulation playground built around procedural growth and pattern generation. Change parameters and watch even small adjustments transform the entire result.</p>
+            <p>Experiment with colors and gradients, use presets as starting points, or create your own and share them through compact ShareCodes. Draw tools let you interact with a simulation directly.</p>
+            <p>There are no levels to clear or predefined solutions to find. Explore at your own pace, and save interesting results as transparent PNG images.</p>
+          </div>
+        </div>
+        <div class='steam-area'>
+          <div class='embed-heading'>
+            <span class='mini-label'>OFFICIAL STEAM STORE WIDGET</span>
+            <span class='embed-aside'>Live store information</span>
+          </div>
+          <div class='steam-frame-wrap'>
+            <iframe
+              class='steam-frame'
+              title='Cyan Moon official Steam store widget'
+              src='https://store.steampowered.com/widget/5176400/?utm_source=daishi11portfolio'
+              width='646'
+              height='190'
+              loading='lazy'
+              referrerpolicy='strict-origin-when-cross-origin'
+            ></iframe>
+          </div>
+          <p class='embed-mobile-note'>On smaller screens, open Steam directly to view the store and wishlist the game.</p>
+        </div>
+        <div class='project-links'>
+          <a class='button button-primary' href='https://store.steampowered.com/app/5176400/Cyan_Moon__The_Simulation_Program/?utm_source=daishi11portfolio' target='_blank' rel='noopener noreferrer'>View on Steam <span aria-hidden='true'>↗</span></a>
+          <a class='button button-secondary' href='#cyan-demo'>Try the demo <span aria-hidden='true'>↓</span></a>
+        </div>
+      </article>
+
+      <article class='project-card project-split demo-card' id='cyan-demo' aria-labelledby='demo-title'>
+        <div class='project-main'>
+          <div class='project-topline'>
+            <span class='project-index'>02 / GAME DEMO</span>
+            <span class='status status-available'>AVAILABLE ON STEAM</span>
+          </div>
+          <h3 id='demo-title'>Cyan Moon <span class='accent'>Demo</span></h3>
+          <div class='project-description'>
+            <p class='hook'>Curious about Cyan Moon? Try the sandbox before making a decision.</p>
+            <p>The free demo gives you a hands-on feel for the simulations and how much variety you can create by changing just a few settings.</p>
+            <p>Experiment at your own pace. It's a preview of the experience, not a separate game with missions or objectives.</p>
+            <p>The Steam demo is available now. An itch.io edition is being prepared and will be linked here once published.</p>
+          </div>
+          <div class='project-links'>
+            <a class='button button-primary' href='https://store.steampowered.com/app/5176400/Cyan_Moon__The_Simulation_Program/?utm_source=daishi11portfolio' target='_blank' rel='noopener noreferrer'>Get the Steam demo <span aria-hidden='true'>↗</span></a>
+            <span class='coming-link' aria-label='itch.io demo not yet published'>itch.io — coming soon</span>
+          </div>
+        </div>
+        <div class='demo-panel' aria-label='Demo availability'>
+          <div class='demo-panel-top'><span class='mono'>CYAN MOON / DEMO</span><span class='panel-signal' aria-hidden='true'></span></div>
+          <div class='demo-panel-center'><span class='demo-free'>FREE</span><span class='demo-small'>TO TRY</span></div>
+          <div class='demo-panel-bottom'><span>WINDOWS</span><span>STEAM AVAILABLE</span></div>
+        </div>
+      </article>
+
+      <article class='project-card project-split eq-card' id='youtube-punch-eq' aria-labelledby='eq-title'>
+        <div class='project-main'>
+          <div class='project-topline'>
+            <span class='project-index'>03 / FIREFOX EXTENSION</span>
+            <span class='status status-available'>AVAILABLE · OPEN SOURCE</span>
+          </div>
+          <h3 id='eq-title'>YouTube <span class='accent'>Punch EQ</span></h3>
+          <div class='project-description'>
+            <p class='hook'>Make YouTube and YouTube Music sound the way you want—without changing the sound of everything else.</p>
+            <p>YouTube Punch EQ is a lightweight Firefox extension with an eight-band equalizer, dedicated bass control, preamp, and customizable presets.</p>
+            <p>Its fast media detection is built for YouTube's page navigation, helping the equalizer reconnect promptly when videos and songs change. All audio processing stays local in your browser.</p>
+            <p>No account, telemetry, or external audio processing. Install the extension from Mozilla Add-ons or explore the source code on GitHub.</p>
+          </div>
+          <div class='project-links'>
+            <a class='button button-primary' href='https://addons.mozilla.org/en-US/firefox/addon/youtube-punch-eq/' target='_blank' rel='noopener noreferrer'>Get Firefox add-on <span aria-hidden='true'>↗</span></a>
+            <a class='button button-secondary' href='https://github.com/Daishi11/youtube-punch-eq' target='_blank' rel='noopener noreferrer'>View source <span aria-hidden='true'>↗</span></a>
+          </div>
+        </div>
+        <figure class='eq-figure'>
+          <img src='assets/youtube-punch-eq.png' alt='YouTube Punch EQ Firefox popup showing the preamp, bass control, eight frequency sliders and a Deep Bass preset' width='439' height='563' loading='lazy'>
+          <figcaption>Actual extension interface</figcaption>
+        </figure>
+      </article>
+
+      <article class='project-card wip-card' id='shortcut-manager' aria-labelledby='shortcut-title'>
+        <div class='project-topline'>
+          <span class='project-index'>04 / WINDOWS UTILITY</span>
+          <span class='status status-wip'>EARLY DEVELOPMENT</span>
+        </div>
+        <div class='wip-content'>
+          <div>
+            <h3 id='shortcut-title'>ShortcutManager</h3>
+            <div class='project-description'>
+              <p class='hook'>Some tasks deserve a keyboard shortcut, not another trip through menus.</p>
+              <p>ShortcutManager is an experimental Windows tray utility for managing global hotkeys and launching applications or actions quickly.</p>
+              <p>The focus is a lightweight workflow that stays out of the way, with practical controls for managing and temporarily suspending shortcuts.</p>
+              <p>It's still early in development. There is no public release or estimated release date yet—and progress may take a while.</p>
+            </div>
+          </div>
+          <aside class='wip-note'>
+            <span class='mini-label'>PROJECT STATUS</span>
+            <strong>Work in progress.</strong>
+            <p>No screenshots, downloads, or source links yet.</p>
+            <span class='mono muted'>// probably not coming soon</span>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <section class='about-section shell' id='about' aria-labelledby='about-title'>
+      <div class='about-copy'>
+        <p class='eyebrow'>ABOUT</p>
+        <h2 id='about-title'>Made because<br><span class='accent'>why not?</span></h2>
+        <p>I'm an independent developer who enjoys building software that's interesting, practical, or both. Some projects are public and open source; others, like Cyan Moon, remain closed source.</p>
+        <p>This page is a home for the things I make. I'll add new projects and links as they're ready.</p>
+      </div>
+      <aside class='support-card' aria-labelledby='support-title'>
+        <span class='mini-label'>KEEP THINGS GOING</span>
+        <h3 id='support-title'>Like what I make?</h3>
+        <p>If you enjoy one of my projects and want to support future development, you can leave a tip on Ko-fi. It's appreciated, never expected.</p>
+        <a class='button button-primary' href='https://ko-fi.com/daishi11' target='_blank' rel='noopener noreferrer'>Support on Ko-fi <span aria-hidden='true'>↗</span></a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class='site-footer'>
+    <div class='shell footer-inner'>
+      <span>© 2026 Daishi11. Built without a framework.</span>
+      <div class='footer-links'>
+        <a href='https://github.com/Daishi11' target='_blank' rel='noopener noreferrer'>GitHub <span aria-hidden='true'>↗</span></a>
+        <a href='https://ko-fi.com/daishi11' target='_blank' rel='noopener noreferrer'>Ko-fi <span aria-hidden='true'>↗</span></a>
+        <a href='#top'>Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
