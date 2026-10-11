@@ -88,7 +88,7 @@ h1, h2, h3 { line-height: 1.13; letter-spacing: -.035em; }
 .button-secondary { background: #192630; color: #dcecf1; border: 1px solid #344653; }
 .button-secondary:hover { border-color: var(--accent); color: #fff; }
 .text-link { text-decoration: none; color: var(--secondary); font-size: 13px; font-weight: 700; padding: 10px; }
-.hero-note { border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg, #15242c 0%, #0f1821 95%); padding: 28px; box-shadow: 15px 25px 80px rgb(0 0 0 / 12%); transform: rotate(1deg); }
+.hero-note { border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg, #15242c 0%, #0f1821 95%); padding: 28px; box-shadow: 15px 25px 80px rgb(0 0 0 / 12%); }
 .terminal-heading { display: flex; align-items: center; gap: 10px; color: var(--accent-pale); font-size: 10px; line-height: 1.4; }
 .terminal-square { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 2px; box-shadow: 0 0 14px #48c9d3; }
 .hero-note-rule { height: 1px; background: var(--line); margin: 25px 0; }
